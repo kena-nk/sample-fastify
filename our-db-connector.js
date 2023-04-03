@@ -4,7 +4,7 @@ import fastifyMongo from '@fastify/mongodb';
 
 async function dbConnector(fastify, options) {
   fastify.register(fastifyMongo, {
-    url: 'mongodb://root:example@localhost:27017',
+    url: 'mongodb://myuser:mypassword@localhost:27017/test_database',
   });
 }
 

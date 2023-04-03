@@ -4,7 +4,7 @@
  * @param {Object} options plugin options, refer to https://www.fastify.io/docs/latest/Reference/Plugins/#plugin-options
  */
 async function routes(fastify, options) {
-  // const collection = fastify.mongo.db.collection('test_collection');
+  const collection = fastify.mongo.db.collection('test_collection');
 
   fastify.get('/', async (request, reply) => {
     return { hello: 'world' };
