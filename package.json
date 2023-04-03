@@ -4,5 +4,17 @@
     "@fastify/mongodb": "^7.0.0",
     "fastify": "^4.15.0",
     "fastify-plugin": "^4.5.0"
+  },
+  "name": "sample-fastify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kena-nk/sample-fastify.git"
   }
 }
