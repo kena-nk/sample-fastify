@@ -8,7 +8,7 @@ db.createUser({
   roles: [
     {
       role: 'readWrite',
-      db: 'test_collection',
+      db: 'test_database',
     },
   ],
 });
