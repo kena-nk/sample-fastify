@@ -1,13 +1,14 @@
 import Fastify from 'fastify';
+import firstRoute from './our-first-route.js';
 
+/**
+ * @type {import('fastify').FastifyInstance} Instance of Fastify
+ */
 const fastify = Fastify({
   logger: true,
 });
 
-// Declare a route
-fastify.get('/', async (request, reply) => {
-  return { hello: 'world' };
-});
+fastify.register(firstRoute);
 
 /**
  * Run the server!
